@@ -2,10 +2,13 @@ render:
 	quarto render quarto_slides.qmd
 
 pdf:
-	xelatex beamer_slides.tex
+	pdflatex --shell-escape beamer_slides.tex
 
 clean:
 	rm -f *.aux *.log *.nav *.out *. pdf *.snm *.toc *.gz *.fls *.fdb_latexmk *.pfg *.dvi
 
 requirements:
-	tlmgr install catchfile ifplatform filemod bigfoot
+	tlmgr install psfrag xypic pst-pdf auto-pst-pdf pstricks
+
+preview:
+	pdflatex --shell-escape preview.tex
