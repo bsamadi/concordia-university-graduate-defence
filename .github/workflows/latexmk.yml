@@ -42,9 +42,9 @@ jobs:
         # Instruct latexmk to enable --shell-escape
         latexmk_shell_escape: true # optional
         # Instruct latexmk to use LuaLaTeX
-        latexmk_use_lualatex: false # optional
+        #latexmk_use_lualatex: true # optional
         # Instruct latexmk to use XeLaTeX
-        #latexmk_use_xelatex: true # optional
+        latexmk_use_xelatex: true # optional
     
     - name: Upload
       uses: actions/upload-artifact@master
