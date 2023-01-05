@@ -42,7 +42,7 @@ jobs:
         # Instruct latexmk to enable --shell-escape
         latexmk_shell_escape: true # optional
         # Instruct latexmk to use LuaLaTeX
-        latexmk_use_lualatex: true # optional
+        latexmk_use_lualatex: false # optional
         # Instruct latexmk to use XeLaTeX
         #latexmk_use_xelatex: true # optional
     
