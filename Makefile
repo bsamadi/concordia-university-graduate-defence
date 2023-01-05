@@ -5,7 +5,7 @@ pdf:
 	xelatex beamer_slides.tex
 
 clean:
-	rm -f *.aux *.log *.nav *.out *. pdf *.snm *.toc *.gz *.fls *.fdb_latexmk *.pfg *.dvi *.ps
+	rm -f *.aux *.log *.nav *.out *. pdf *.snm *.toc *.gz *.fls *.fdb_latexmk *.pfg *.dvi *.ps *.xdv
 
 requirements:
 	tlmgr install psfrag xypic pst-pdf auto-pst-pdf pstricks
