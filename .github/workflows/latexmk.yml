@@ -6,9 +6,9 @@ name: LaTeX
 # events but only for the master branch
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -42,7 +42,7 @@ jobs:
         # Instruct latexmk to enable --shell-escape
         latexmk_shell_escape: true # optional
         # Instruct latexmk to use LuaLaTeX
-        latexmk_use_lualatex: false # optional
+        latexmk_use_lualatex: true # optional
         # Instruct latexmk to use XeLaTeX
         #latexmk_use_xelatex: true # optional
     
